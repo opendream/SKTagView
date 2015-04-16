@@ -6,7 +6,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SKTagView+PixateFreeStyle.h"
 
 @class SKTag;
 @interface SKTagView : UIView

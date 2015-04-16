@@ -8,6 +8,8 @@
 
 #import "SKTagView.h"
 
+@class SKTag;
+
 @interface SKTagView (PixateFreeStyle)
 ///
 /// Custom ButtonStyle

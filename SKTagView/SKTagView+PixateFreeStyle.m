@@ -7,13 +7,17 @@
 //
 
 #import "SKTagView+PixateFreeStyle.h"
+#import "SKTagButton.h"
+#import "SKTag.h"
 
 @implementation SKTagView (PixateFreeStyle)
 
 - (id)buttonWithTag:(SKTag *)tag {
     
     SKTagButton *button = [SKTagButton buttonWithTag:tag];
-    [button setStyleClass:tag.styleClass];
+    if ([button respondsToSelector:@selector(styleClass)]) {
+        [button setValue:tag.styleClass forKey:@"styleClass"];
+    }
     return button;
 }
 

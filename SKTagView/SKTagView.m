@@ -8,6 +8,8 @@
 #import "SKTagView.h"
 #import "SKTag.h"
 #import "SKTagButton.h"
+#import "SKTagView+PixateFreeStyle.h"
+
 #import <Masonry/Masonry.h>
 
 #define SAVE_C(c) [self.tagsContraints addObject:c]
