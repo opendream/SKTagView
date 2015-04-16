@@ -21,6 +21,12 @@
 @property (nonatomic) UIEdgeInsets padding;
 @property (nonatomic) CGFloat fontSize;
 
+///
+/// Pixate FreeStyle
+/// Add styleClass 
+///
+@property (nonatomic, copy) NSString *styleClass;
+
 - (instancetype)initWithText:(NSString *)text;
 + (instancetype)tagWithText:(NSString *)text;
 

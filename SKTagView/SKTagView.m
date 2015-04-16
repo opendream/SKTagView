@@ -264,7 +264,7 @@
 #pragma mark - Public methods
 - (void)addTag:(SKTag *)tag
 {
-    SKTagButton *btn = [SKTagButton buttonWithTag:tag];
+    SKTagButton *btn = [self buttonWithTag:tag];
     [btn addTarget:self action:@selector(onTag:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:btn];
     [self.tags addObject:tag];
@@ -281,7 +281,7 @@
     }
     else
     {
-        SKTagButton *btn = [SKTagButton buttonWithTag:tag];
+        SKTagButton *btn = [self buttonWithTag:tag];
         [btn addTarget:self action:@selector(onTag:) forControlEvents:UIControlEventTouchUpInside];
         [self insertSubview:btn atIndex:index];
         [self.tags insertObject:tag atIndex:index];

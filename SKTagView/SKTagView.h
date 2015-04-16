@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SKTagView+PixateFreeStyle.h"
 
 @class SKTag;
 @interface SKTagView : UIView
@@ -25,4 +26,3 @@
 @property (nonatomic, copy) void (^didClickTagAtIndex)(NSUInteger index);
 
 @end
-

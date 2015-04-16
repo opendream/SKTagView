@@ -16,6 +16,7 @@
 		682ABA7E1A36933300D57A1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682ABA7C1A36933300D57A1A /* LaunchScreen.xib */; };
 		682ABA8A1A36933300D57A1A /* WrapViewWithAutolayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 682ABA891A36933300D57A1A /* WrapViewWithAutolayoutTests.m */; };
 		682ABA951A3693BC00D57A1A /* SKTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 682ABA941A3693BC00D57A1A /* SKTagView.m */; };
+		834FEA5D1ADFA2C500BF53C8 /* SKTagView+PixateFreeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 834FEA5C1ADFA2C500BF53C8 /* SKTagView+PixateFreeStyle.m */; };
 		D865CB921A6415B200F3592C /* TagsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D865CB911A6415B200F3592C /* TagsTableViewController.m */; };
 		D865CB951A64160500F3592C /* TagsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D865CB941A64160500F3592C /* TagsTableCell.m */; };
 		E198833B70106A7B969AF9D2 /* SKTag.m in Sources */ = {isa = PBXBuildFile; fileRef = E198883D944B29B6488A5B34 /* SKTag.m */; };
@@ -50,6 +51,8 @@
 		682ABA931A3693BC00D57A1A /* SKTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTagView.h; sourceTree = "<group>"; };
 		682ABA941A3693BC00D57A1A /* SKTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTagView.m; sourceTree = "<group>"; };
 		6B8DAFE5AC7C5EAB149408DB /* Pods-WrapViewWithAutolayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WrapViewWithAutolayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-WrapViewWithAutolayout/Pods-WrapViewWithAutolayout.release.xcconfig"; sourceTree = "<group>"; };
+		834FEA5B1ADFA2C500BF53C8 /* SKTagView+PixateFreeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKTagView+PixateFreeStyle.h"; sourceTree = "<group>"; };
+		834FEA5C1ADFA2C500BF53C8 /* SKTagView+PixateFreeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKTagView+PixateFreeStyle.m"; sourceTree = "<group>"; };
 		D865CB901A6415B200F3592C /* TagsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsTableViewController.h; sourceTree = "<group>"; };
 		D865CB911A6415B200F3592C /* TagsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsTableViewController.m; sourceTree = "<group>"; };
 		D865CB931A64160500F3592C /* TagsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsTableCell.h; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				E1988A206257CAF7FE6FC77A /* SKTag.h */,
 				E1988DC652E4B5A7DD3FC44D /* SKTagButton.m */,
 				E19884C2F2577114719748BD /* SKTagButton.h */,
+				834FEA5B1ADFA2C500BF53C8 /* SKTagView+PixateFreeStyle.h */,
+				834FEA5C1ADFA2C500BF53C8 /* SKTagView+PixateFreeStyle.m */,
 			);
 			name = SKTagView;
 			path = ../SKTagView;
@@ -319,6 +324,7 @@
 				D865CB921A6415B200F3592C /* TagsTableViewController.m in Sources */,
 				682ABA701A36933300D57A1A /* main.m in Sources */,
 				E198833B70106A7B969AF9D2 /* SKTag.m in Sources */,
+				834FEA5D1ADFA2C500BF53C8 /* SKTagView+PixateFreeStyle.m in Sources */,
 				E1988E0CF76D59E86E94A7CC /* SKTagButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
