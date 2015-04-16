@@ -14,11 +14,17 @@
 
 - (id)buttonWithTag:(SKTag *)tag {
     
-    SKTagButton *button = [SKTagButton buttonWithTag:tag];
-    if ([button respondsToSelector:@selector(styleClass)]) {
-        [button setValue:tag.styleClass forKey:@"styleClass"];
+    SKTagButton *btn = [SKTagButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:tag.text forState:UIControlStateNormal];
+    [btn setTitleColor:tag.textColor forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:tag.fontSize];
+    btn.backgroundColor = tag.bgColor;
+    btn.contentEdgeInsets = tag.padding;
+    
+    if ([btn respondsToSelector:@selector(styleClass)]) {
+        [btn setValue:tag.styleClass forKey:@"styleClass"];
     }
-    return button;
+    return btn;
 }
 
 @end

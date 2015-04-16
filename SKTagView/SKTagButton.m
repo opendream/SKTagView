@@ -10,7 +10,7 @@
 
 + (instancetype)buttonWithTag:(SKTag *)tag
 {
-    SKTagButton *btn = [super buttonWithType:UIButtonTypeSystem];
+    SKTagButton *btn = [[self class] button];
     [btn setTitle:tag.text forState:UIControlStateNormal];
     [btn setTitleColor:tag.textColor forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont systemFontOfSize:tag.fontSize];
@@ -36,6 +36,10 @@
     btn.layer.masksToBounds = YES;
     
     return btn;
+}
+
++ (instancetype)button {
+    return [super buttonWithType:UIButtonTypeCustom];
 }
 
 @end
