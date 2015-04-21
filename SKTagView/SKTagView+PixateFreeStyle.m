@@ -17,6 +17,7 @@
     SKTagButton *btn = [SKTagButton buttonWithTag:tag];
     if ([btn respondsToSelector:@selector(styleClass)]) {
         [btn setValue:tag.styleClass forKey:@"styleClass"];
+        [btn setValue:tag.styleCSS forKey:@"styleCSS"];
     }
     return btn;
 }

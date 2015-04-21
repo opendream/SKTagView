@@ -26,6 +26,7 @@
 /// Add styleClass 
 ///
 @property (nonatomic, copy) NSString *styleClass;
+@property (nonatomic, copy) NSString *styleCSS;
 
 - (instancetype)initWithText:(NSString *)text;
 + (instancetype)tagWithText:(NSString *)text;
