@@ -6,8 +6,6 @@
 //
 
 #import "SKTagView.h"
-#import "SKTag.h"
-#import "SKTagButton.h"
 #import "SKTagView+PixateFreeStyle.h"
 
 #import <Masonry/Masonry.h>
@@ -264,6 +262,17 @@
 }
 
 #pragma mark - Public methods
+
+- (void)addTagButton:(SKTagButton *)btn withTag:(SKTag *)tag {
+    
+    [btn addTarget:self action:@selector(onTag:) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:btn];
+    [self.tags addObject:tag];
+    
+    self.didSetup = NO;
+    [self invalidateIntrinsicContentSize];
+}
+
 - (void)addTag:(SKTag *)tag
 {
     SKTagButton *btn = [self buttonWithTag:tag];

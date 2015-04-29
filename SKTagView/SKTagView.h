@@ -5,9 +5,9 @@
 //  Copyright (c) 2015 Shaokang Zhao. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SKTag.h"
+#import "SKTagButton.h"
 
-@class SKTag;
 @interface SKTagView : UIView
 
 @property (nonatomic) UIEdgeInsets padding;
@@ -16,6 +16,7 @@
 @property (nonatomic) CGFloat preferredMaxLayoutWidth;
 @property (nonatomic) BOOL singleLine;
 
+- (void)addTagButton:(SKTagButton *)btn withTag:(SKTag *)tag;
 - (void)addTag:(SKTag *)tag;
 - (void)insertTag:(SKTag *)tag atIndex:(NSUInteger)index;
 - (void)removeTag:(SKTag *)tag;
